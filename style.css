@@ -6,7 +6,7 @@ body a:hover {
   text-decoration: none;
 }
 body header {
-  font-family: 'Lobster';
+  font-family: "Lobster";
 }
 body header h1 {
   font-size: calc(25px + 2vmin);
@@ -45,7 +45,7 @@ body footer {
   position: absolute;
   bottom: 1vh;
   font-size: 12px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 body footer section {
   text-align: center;
