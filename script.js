@@ -115,7 +115,7 @@ function connectAudioDestination() {
     console.log("up" + key);
     let id = keyToId(key);
     $(id).removeClass('active');
-    if (key == 186 || key == 222) shift = 1;
+    if (key == 186 || key == 222) shift = idToShift(key);
   });
 }
 
