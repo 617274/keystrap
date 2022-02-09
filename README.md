@@ -1,6 +1,51 @@
 # keystrap
 
 Plays and records musical notes. Backend made with Web Audio and MediaStream Recording APIs; UI made with Bootstrap Flexgrid.
+Adaptive layout responds to browser window size changes.
+
+### Controls
+
+By app interface buttons, or by QWERTY keyboard. For the latter, schema is below.
+
+A >> Play C (low)
+
+W >> Play C#
+
+S >> Play D
+
+E >> Play Eb
+
+D >> Play E
+
+F >> Play F
+
+R >> Play F#
+
+J >> Play G
+
+U >> Play G#
+
+K >> Play A
+
+I >> Play Bb
+
+L >> Play B
+
+; >> Play C (high)
+
+C >> Set sound type to Sine Wave
+
+V >> Set sound type to Square Wave
+
+N >> Set sound type to Triangle Wave
+
+M >> Set sound type to Sawtooth Wave
+
+H or P >> Raise pitch
+
+G or Q >> Lower pitch
+
+O or Space >> Reset app
 
 ## Walkthrough: [Generate and record sounds with Oscillator and MediaRecorder	](https://coded.art/generate-and-record-sounds-with-oscillator-and-mediarecorder/)
 
@@ -25,10 +70,10 @@ The Web Audio API is built around [`AudioContext`](https://developer.mozilla.or
  let context = false;  
  let speakerNode = false;  
  let recorderNode = false;  
-  
+
  // Prefs  
  /* _e.g. wave type, pitch_ */  
-  
+
  // View IDs  
  /* _e.g. play, stop, record, player, display, sounds, etc. _*/  
 ```
@@ -131,7 +176,7 @@ $(sound).on('click', () = {
   ...
   playPad(id);
 })
-  
+
 $(document).keypress(e = {
   let key = e.which;
   ...
@@ -214,13 +259,13 @@ $(start).on('click', () =&gt; {
   recorder.start();  
   $(display).text(...);  
 });  
-  
+
 $(stop).on('click', () =&gt; {  
   ...  
   recorder.stop();  
   $(display).text(...);  
 });  
-  
+
 ...
 ```
 
@@ -270,7 +315,7 @@ Feed the stream to the `MediaRecorder`. That’s it!
 
 ```
 captureMediaStream(recorderNode.stream);  
-  
+
 function captureMediaStream(stream) {  
   let recorder = new MediaRecorder(stream);  
   ...  
