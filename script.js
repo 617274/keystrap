@@ -70,12 +70,9 @@ function getAudioContext() {
     window.AudioContext ||
     window.webkitAudioContext)());
 
-
     reject(
     "Your browser rejected a request to access the Web Audio API, a required component");
-
   });
-
 }
 
 function connectAudioDestination() {
@@ -176,8 +173,8 @@ function idToShift(id) {
   switch (id) {
     case raiseFreq:return 2;
     case lowerFreq:return 0.5;
-    default:return shift;}
-
+    default:return shift;
+  }
 }
 
 function idToType(id) {
@@ -186,8 +183,8 @@ function idToType(id) {
     case squareWave:return "square";
     case triangleWave:return "triangle";
     case sawtoothWave:return "sawtooth";
-    default:return type;}
-
+    default:return type;
+  }
 }
 
 function keyToId(key) {
@@ -198,22 +195,25 @@ function keyToId(key) {
     case 69:return efSound;
     case 68:return eSound;
     case 70:return fSound;
-    case 71:return fsSound;
+    case 82:return fsSound;
     case 74:return gSound;
     case 85:return gsSound;
     case 75:return aSound;
     case 73:return bfSound;
     case 76:return bSound;
-    case 79:return chSound;
-    case 222:return raiseFreq;
-    case 186:return lowerFreq;
-    case 90:return sineWave;
-    case 88:return squareWave;
-    case 188:return triangleWave;
-    case 190:return sawtoothWave;
+    case 186:return chSound;
+    case 72:return raiseFreq;
+    case 80:return raiseFreq;
+    case 71:return lowerFreq;
+    case 81:return lowerFreq;
+    case 67:return sineWave;
+    case 86:return squareWave;
+    case 78:return triangleWave;
+    case 77:return sawtoothWave;
+    case 79:return refresh;
     case 32:return refresh;
-    default:return false;}
-
+    default:return false;
+  }
 }
 
 function keypressToId(key) {
@@ -224,22 +224,25 @@ function keypressToId(key) {
     case 101:return efSound;
     case 100:return eSound;
     case 102:return fSound;
-    case 103:return fsSound;
+    case 114:return fsSound;
     case 106:return gSound;
     case 117:return gsSound;
     case 107:return aSound;
     case 105:return bfSound;
     case 108:return bSound;
-    case 111:return chSound;
-    case 39:return raiseFreq;
-    case 59:return lowerFreq;
-    case 122:return sineWave;
-    case 120:return squareWave;
-    case 44:return triangleWave;
-    case 46:return sawtoothWave;
+    case 59:return chSound;
+    case 104:return raiseFreq;
+    case 112:return raiseFreq;
+    case 103:return lowerFreq;
+    case 113:return lowerFreq;
+    case 99:return sineWave;
+    case 118:return squareWave;
+    case 110:return triangleWave;
+    case 109:return sawtoothWave;
+    case 111:return refresh;
     case 32:return refresh;
-    default:return false;}
-
+    default:return false;
+  }
 }
 
 function idToFrequency(id) {
@@ -257,8 +260,8 @@ function idToFrequency(id) {
     case bfSound:return 1865;
     case bSound:return 1976;
     case chSound:return 2093;
-    default:return 0;}
-
+    default:return 0;
+  }
 }
 
 function frequencyToSound(frequency) {
@@ -299,8 +302,8 @@ function idToNote(frequency) {
     case bfSound:return 'Bb';
     case bSound:return 'B';
     case chSound:return 'C';
-    default:return '';}
-
+    default:return '';
+  }
 }
 
 function typeAsSymbol() {
@@ -309,8 +312,8 @@ function typeAsSymbol() {
     case 'square':return '⊓';
     case 'triangle':return 'v';
     case 'sawtooth':return 'ᴎ';
-    default:return '';}
-
+    default:return '';
+  }
 }
 
 function playPad(id) {
