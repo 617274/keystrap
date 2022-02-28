@@ -5,7 +5,7 @@ Adaptive layout responds to browser window size changes.
 
 ### Controls
 
-By app interface buttons, or by QWERTY keyboard. For the latter, schema is below.
+Access controls by clicking app interface buttons or by typing QWERTY keyboard keys. For the latter choice, schema is below.
 
 A >> Play C (low)
 
