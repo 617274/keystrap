@@ -3,6 +3,8 @@
 Plays and records musical notes. Backend made with Web Audio and MediaStream Recording APIs; UI made with Bootstrap Flexgrid.
 Adaptive layout responds to browser window size changes.
 
+Webpage: https://bxcd.github.io/keystrap
+
 ### Controls
 
 Access controls by clicking app interface buttons or by typing QWERTY keyboard keys. For the latter choice, schema is below.
