@@ -1,6 +1,6 @@
 # keystrap
 
-Plays and records musical notes. Backend made with Web Audio and MediaStream Recording APIs; UI made with Bootstrap Flexgrid.
+A responsively-designed keyboard that plays and records musical notes. Backend made with Web Audio and MediaStream Recording APIs; UI made with Bootstrap Flexgrid.
 Adaptive layout responds to browser window size changes.
 
 Webpage: https://bxcd.github.io/keystrap
